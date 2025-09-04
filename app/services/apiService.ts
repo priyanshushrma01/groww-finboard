@@ -1,4 +1,3 @@
-// Real API integration with Alpha Vantage - WITH BETTER ERROR HANDLING
 const API_KEY = process.env.NEXT_PUBLIC_ALPHA_VANTAGE_API_KEY || 'demo';
 const BASE_URL = 'https://www.alphavantage.co/query';
 

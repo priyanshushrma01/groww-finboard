@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { X, BarChart3, Table, TrendingUp } from 'lucide-react';
-// Update the import path if the file is located elsewhere, for example:
 import { addWidget } from '../../store/slices/widgetsSlice';
 import { Widget } from '../../types';
 
