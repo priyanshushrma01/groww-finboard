@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/* Force dark mode styles only */
+:root {
+  --background: 17 24 39; /* gray-900 */
+  --foreground: 249 250 251; /* gray-50 */
+  --border: 55 65 81; /* gray-700 */
+}
+
+@layer base {
+  * {
+    @apply border-gray-700;
+  }
+  body {
+    @apply bg-gray-900 text-gray-100;
+  }
+}
+
+@layer components {
+  .widget-card {
+    @apply bg-gray-800 rounded-lg shadow-sm border border-gray-700;
+  }
+  
+  .widget-header {
+    @apply flex items-center justify-between p-4 border-b border-gray-700;
+  }
+  
+  .widget-content {
+    @apply p-4;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-all duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-700 hover:bg-gray-600 text-gray-300 px-4 py-2 rounded-lg font-medium transition-all duration-200;
+  }
+  
+  .data-table {
+    @apply w-full text-sm text-left text-gray-400;
+  }
+  
+  .data-table thead {
+    @apply text-xs text-gray-400 uppercase bg-gray-700;
+  }
+  
+  .data-table th {
+    @apply px-4 py-3;
+  }
+  
+  .data-table td {
+    @apply px-4 py-3;
+  }
+  
+  .data-table tbody tr {
+    @apply bg-gray-800 border-b border-gray-700 hover:bg-gray-700 transition-colors;
+  }
+}
+
+.drag-handle {
+  @apply cursor-grab active:cursor-grabbing;
+}
+
+.dragging {
+  @apply opacity-50 rotate-1 scale-105;
+}
